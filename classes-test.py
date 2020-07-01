@@ -27,6 +27,11 @@ class TestUsers(unittest.TestCase):
         test_user.save_user()
         self.new_user.delete_user()
         self.assertEqual(len(Users.user_list),1)
+        
+
+if __name__ == '__main__':
+    unittest.main()
+
 
 class TestCredential(unittest.TestCase):
     def setUp(self):
