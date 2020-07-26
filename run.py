@@ -179,14 +179,14 @@ def main():
                             print("That Credential does not exist")
                             print("\n")    
 
-                    # elif short_code == 'copy':
-                    #     print("\n")
-                    #     site_name = input("Enter the site name for the credential password to copy:")
-                    #     if find_by_site_name(site_name):
-                    #         credential_to_copy = find_by_site_name(site_name)
-                    #         credential_to_copy.copy_credentials(site_name)
+                    elif short_code == 'copy':
+                        print("\n")
+                        site_name = input("Enter the site name for the credential password to copy:")
+                        if find_by_site_name(site_name):
+                            credential_to_copy = find_by_site_name(site_name)
+                            credential_to_copy.copy_credentials(site_name)
 
-                    #         print("Credential successfully copied")
+                            print("Credential successfully copied")
                     # elif short_code == "x":
                     #      print('Goodbye.....')
                     #      break
