@@ -64,8 +64,8 @@ class TestCredential(unittest.TestCase):
         credential_found = Credentials.find_by_site_name("Twitter")
         self.assertEqual(credential_found.site_name,"Twitter")
     
-#     def test_display_all_credentials(self):
-#         self.assertEqual(Credentials.display_all_credentials(),Credentials.credential_list)
+    def test_display_all_credentials(self):
+        self.assertEqual(Credentials.display_all_credentials(),Credentials.credential_list)
     
 #     def test_copy_credentials(self):
 #         self.new_credential.save_credentials()
