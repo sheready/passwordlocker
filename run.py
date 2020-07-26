@@ -157,16 +157,16 @@ def main():
                         else:
                             print("You don\'t have any credentials yet")
                     
-                    # elif short_code == 'sc':
-                    #     print("Enter the account you want to search for")
-                    #     site_name = input().lower()
-                    #     if find_by_site_name(site_name):
-                    #         search_credential = find_by_site_name(site_name)
-                    #         print(f"Account Name: {search_credential.site_name}")
-                    #         print(f"User Name: {search_credential.usernamez} Password : {search_credential.passwordz}")
-                    #     else:
-                    #         print("That credential does not exist")
-                    #         print("\n")
+                    elif short_code == 'sc':
+                        print("Enter the account you want to search for")
+                        site_name = input().lower()
+                        if find_by_site_name(site_name):
+                            search_credential = find_by_site_name(site_name)
+                            print(f"Account Name: {search_credential.site_name}")
+                            print(f"User Name: {search_credential.usernamez} Password : {search_credential.passwordz}")
+                        else:
+                            print("That credential does not exist")
+                            print("\n")
 
                     # elif short_code == 'rm':
                     #     print("Enter the account type of the credential you wish to delete:")
