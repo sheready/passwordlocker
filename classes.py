@@ -54,11 +54,11 @@ class Credentials:
     def rand_pass(cls,size):
         generate_pass = ''.join([random.choice(string.ascii_letters + string.digits) for n in range(size)])
         return generate_pass
-    # @classmethod
-    # def find_by_site_name(cls, site_name):
-    #     for credential in cls.credential_list:
-    #         if credential.site_name == site_name:
-    #             return credential
+    @classmethod
+    def find_by_site_name(cls, site_name):
+        for credential in cls.credential_list:
+            if credential.site_name == site_name:
+                return credential
         
    
     # @classmethod
