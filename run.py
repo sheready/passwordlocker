@@ -187,11 +187,11 @@ def main():
                             credential_to_copy.copy_credentials(site_name)
 
                             print("Credential successfully copied")
-                    # elif short_code == "x":
-                    #      print('Goodbye.....')
-                    #      break
-                    # else:
-                    #     print("Invalid")
+                    elif short_code == "x":
+                         print('Goodbye.....')
+                         break
+                    else:
+                        print("Invalid")
             else:
                 print("I didn\'t get that, please try again")
                 print('\n')
