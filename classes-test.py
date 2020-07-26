@@ -35,10 +35,10 @@ class TestCredential(unittest.TestCase):
     def setUp(self):
         self.new_credential = Credentials("Steve","Twitter","dfgfh")
     
-#     def test_init(self):
-#         self.assertEqual(self.new_credential.user_name,"Steve")
-#         self.assertEqual(self.new_credential.site_name,"Twitter")
-#         self.assertEqual(self.new_credential.password,"dfgfh")
+    def test_init(self):
+        self.assertEqual(self.new_credential.user_name,"Steve")
+        self.assertEqual(self.new_credential.site_name,"Twitter")
+        self.assertEqual(self.new_credential.password,"dfgfh")
     
 #     def tearDown(self):
 #         Credentials.credential_list = []
