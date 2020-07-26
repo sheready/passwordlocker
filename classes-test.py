@@ -40,9 +40,9 @@ class TestCredential(unittest.TestCase):
         self.assertEqual(self.new_credential.site_name,"Twitter")
         self.assertEqual(self.new_credential.password,"dfgfh")
     
-#     def tearDown(self):
-#         Credentials.credential_list = []
-#         Users.user_list = []
+    def tearDown(self):
+        Credentials.credential_list = []
+        Users.user_list = []
     
 #     def test_save_credentials(self):
 #         self.new_credential.save_credentials()
