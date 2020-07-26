@@ -57,12 +57,12 @@ class TestCredential(unittest.TestCase):
         twitter.delete_credentials()
         self.assertEqual(len(Credentials.credential_list),1)
     
-#     def test_find_by_site_name(self):
-#         self.new_credential.save_credentials()
-#         twitter = Credentials("Steve","Twitter","dfgfh")
-#         twitter.save_credentials()
-#         credential_found = Credentials.find_by_site_name("Twitter")
-#         self.assertEqual(credential_found.site_name,"Twitter")
+    def test_find_by_site_name(self):
+        self.new_credential.save_credentials()
+        twitter = Credentials("Steve","Twitter","dfgfh")
+        twitter.save_credentials()
+        credential_found = Credentials.find_by_site_name("Twitter")
+        self.assertEqual(credential_found.site_name,"Twitter")
     
 #     def test_display_all_credentials(self):
 #         self.assertEqual(Credentials.display_all_credentials(),Credentials.credential_list)
