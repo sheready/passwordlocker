@@ -30,8 +30,8 @@ class Credentials:
         current_user = ''
         for user in Users.user_list:
             if (user.user_name == user_name and user.password == password):
-                 return True
-            return False
+                current_user = user_name
+            return current_user
     
     @classmethod
     def display_users(cls):
@@ -54,11 +54,26 @@ class Credentials:
     def rand_pass(cls,size):
         generate_pass = ''.join([random.choice(string.ascii_letters + string.digits) for n in range(size)])
         return generate_pass
-    
+    # @classmethod
+    # def find_by_site_name(cls, site_name):
+    #     for credential in cls.credential_list:
+    #         if credential.site_name == site_name:
+    #             return credential
+        
    
-    @classmethod
-    def display_credentials(cls):
-        return cls.credential_list
+    # @classmethod
+    # def display_credentials(cls, user_namez):
+    #     user_credential_list = []
+    #     for credential in cls.credential_list:
+    #         if credential.user_namez == user_namez:
+    #             user_credential_list.append(credential)
+
+    #     return user_credential_list
+    
+    # @classmethod
+    # def copy_credentials(cls,site_name):
+    #     found_credential = cls.find_by_site_name(site_name)
+    #     return pyperclip.copy(found_credential.password)
     
     
 
