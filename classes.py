@@ -61,14 +61,14 @@ class Credentials:
                 return credential
         
    
-    # @classmethod
-    # def display_credentials(cls, user_namez):
-    #     user_credential_list = []
-    #     for credential in cls.credential_list:
-    #         if credential.user_namez == user_namez:
-    #             user_credential_list.append(credential)
+    @classmethod
+    def display_credentials(cls, user_namez):
+        user_credential_list = []
+        for credential in cls.credential_list:
+            if credential.user_namez == user_namez:
+                user_credential_list.append(credential)
 
-    #     return user_credential_list
+        return user_credential_list
     
     # @classmethod
     # def copy_credentials(cls,site_name):
