@@ -168,16 +168,16 @@ def main():
                             print("That credential does not exist")
                             print("\n")
 
-                    # elif short_code == 'rm':
-                    #     print("Enter the account type of the credential you wish to delete:")
-                    #     site_name = input()
-                    #     if find_by_site_name(site_name):
-                    #         credential_to__delete = find_by_site_name(site_name)
-                    #         credential_to__delete.delete_credentials()
-                    #         print("Credential successfuly deleted")
-                    #     else:
-                    #         print("That Credential does not exist")
-                    #         print("\n")    
+                    elif short_code == 'rm':
+                        print("Enter the account type of the credential you wish to delete:")
+                        site_name = input()
+                        if find_by_site_name(site_name):
+                            credential_to__delete = find_by_site_name(site_name)
+                            credential_to__delete.delete_credentials()
+                            print("Credential successfuly deleted")
+                        else:
+                            print("That Credential does not exist")
+                            print("\n")    
 
                     # elif short_code == 'copy':
                     #     print("\n")
