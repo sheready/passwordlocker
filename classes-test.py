@@ -29,8 +29,6 @@ class TestUsers(unittest.TestCase):
         self.assertEqual(len(Users.user_list),1)
         
 
-if __name__ == '__main__':
-    unittest.main()
 
 
 class TestCredential(unittest.TestCase):
